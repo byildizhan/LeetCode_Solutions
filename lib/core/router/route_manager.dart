@@ -1,9 +1,11 @@
 import 'package:go_router/go_router.dart';
 import 'package:leet/core/constants/routes.dart';
 import 'package:leet/view/main_page.dart';
-import 'package:leet/view/polindrome/palindrome_view.dart';
+import 'package:leet/view/palindrome/palindrome_view.dart';
+import 'package:leet/view/roman_to_integer/roman_to_integer_view.dart';
 import 'package:leet/view_model/main_page_view_model.dart';
 import 'package:leet/view_model/palindrome_view_model.dart';
+import 'package:leet/view_model/roman_to_integer_view_model.dart';
 import 'package:provider/provider.dart';
 
 final GoRouter router = GoRouter(routes: [
@@ -24,6 +26,16 @@ final GoRouter router = GoRouter(routes: [
       return ChangeNotifierProvider<PalindromeViewModel>(
         create: (context) => PalindromeViewModel(),
         child: PalindromeView(),
+      );
+    },
+  ),
+  GoRoute(
+    path: Routes.romanToIntegerView,
+    name: '/roman_to_integer_view',
+    builder: (context, state) {
+      return ChangeNotifierProvider<RomanToIntegerViewModel>(
+        create: (context) => RomanToIntegerViewModel(),
+        child: RomanToIntegerView(),
       );
     },
   ),

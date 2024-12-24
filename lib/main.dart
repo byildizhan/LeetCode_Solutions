@@ -20,24 +20,23 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: AppStrings.mainPageTitle,
         theme: ThemeData(
-        colorScheme: const ColorScheme(
-          brightness: Brightness.light,
-          primary: Color(0xFF6200EE),
-          onPrimary: Color(0xFFFFFFFF),
-          secondary: Color(0xFF03DAC6),
-          onSecondary: Color(0xFF000000),
-          error: Color(0xFFB00020),
-          onError: Color(0xFFFFFFFF),
-          surface: Color(0xFFFFFFFF),
-          onSurface: Color(0xFF000000),
+          colorScheme: const ColorScheme(
+            brightness: Brightness.light,
+            primary: Color(0xFF6200EE),
+            onPrimary: Color(0xFFFFFFFF),
+            secondary: Color(0xFF03DAC6),
+            onSecondary: Color(0xFF000000),
+            error: Color(0xFFB00020),
+            onError: Color(0xFFFFFFFF),
+            surface: Color(0xFFFFFFFF),
+            onSurface: Color(0xFF000000),
+          ),
+          textTheme: const TextTheme(
+            bodyLarge: TextStyle(fontSize: 18, color: Colors.black),
+          ),
         ),
-        textTheme: const TextTheme(
-          bodyLarge: TextStyle(fontSize: 18, color: Colors.black),
-        ),
-      ),
         routerConfig: router,
       ),
     );
   }
 }
-

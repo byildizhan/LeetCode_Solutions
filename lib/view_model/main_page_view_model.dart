@@ -5,5 +5,7 @@ import 'package:leet/widgets/solutions_widget.dart';
 class MainPageViewModel extends ChangeNotifier {
   List<Widget> solutions = [
     const SolutionsWidget(route: Routes.palindromeView, title: 'Palindrome'),
+    const SolutionsWidget(
+        route: Routes.romanToIntegerView, title: 'Roman & Integer Converter'),
   ];
 }

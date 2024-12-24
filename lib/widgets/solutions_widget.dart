@@ -19,8 +19,9 @@ class SolutionsWidget extends StatelessWidget {
         color: Theme.of(context).colorScheme.secondary,
         child: TextStyleGenerator(
             text: title,
-            fontSize: 20.sp,
-            fontWeight: FontWeight.w800,
+            fontSize: 18.sp,
+            fontWeight: FontWeight.w700,
+            alignment: TextAlign.center,
             color: Theme.of(context).colorScheme.onSecondary),
       ),
     );
