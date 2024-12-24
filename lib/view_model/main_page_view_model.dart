@@ -6,6 +6,8 @@ class MainPageViewModel extends ChangeNotifier {
   List<Widget> solutions = [
     const SolutionsWidget(route: Routes.palindromeView, title: 'Palindrome'),
     const SolutionsWidget(
-        route: Routes.romanToIntegerView, title: 'Roman & Integer Converter'),
+        route: Routes.romanToIntegerView, title: 'Roman To Integer Converter'),
+    const SolutionsWidget(
+        route: Routes.isBracesValidView, title: 'Braces Validation'),
   ];
 }
